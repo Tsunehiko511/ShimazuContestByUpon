@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13607586}
   m_Layer: 0
-  m_Name: LeftSwitch
+  m_Name: BlueSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -764,8 +764,8 @@ GameObject:
   - component: {fileID: 239848987}
   - component: {fileID: 239848986}
   - component: {fileID: 239848985}
-  - component: {fileID: 239848990}
   - component: {fileID: 239848989}
+  - component: {fileID: 239848990}
   m_Layer: 0
   m_Name: Switch
   m_TagString: Untagged
@@ -872,9 +872,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 239848984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8e238ecb881ec44aa6541472ce61a3, type: 3}
+  m_Script: {fileID: 11500000, guid: cde4fb67030fc413e892c46a843055a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 0
+  tagType: PlayerOrange
+  downValue: 0.14
 --- !u!1 &240566555
 GameObject:
   m_ObjectHideFlags: 0
@@ -5994,6 +5997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c70385767bf2734ea66d87523bf90c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  switchController: {fileID: 1423071133}
 --- !u!1 &405323395
 GameObject:
   m_ObjectHideFlags: 0
@@ -10980,15 +10984,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa798da741ec047dc9b7ba4ed96f3610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBlue: 0
   playerPrefabs:
   - {fileID: 2532639584381498365, guid: b3a885d8ce2020f4ba5a9e002ab816e3, type: 3}
   - {fileID: 9108829905998716331, guid: 7546928d9ee802049aed0f6c3c400ab5, type: 3}
   playerPositions:
   - {fileID: 596692945}
   - {fileID: 609577130}
-  resultPanel: {fileID: 0}
-  lobbyButton: {fileID: 0}
-  resultText: {fileID: 0}
 --- !u!4 &527106089
 Transform:
   m_ObjectHideFlags: 0
@@ -11106,7 +11108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 581416876}
   m_Layer: 0
-  m_Name: LeftLamp
+  m_Name: BlueLamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11128,7 +11130,6 @@ Transform:
   - {fileID: 829590411}
   - {fileID: 1192673113}
   - {fileID: 331228879}
-  - {fileID: 1690529024}
   m_Father: {fileID: 1714917914}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11255,6 +11256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tobira: {fileID: 223974226}
+  blueSwitch: {fileID: 1423071133}
+  orangeSwitch: {fileID: 239848990}
 --- !u!4 &595433628
 Transform:
   m_ObjectHideFlags: 0
@@ -12941,8 +12944,8 @@ GameObject:
   - component: {fileID: 1423071130}
   - component: {fileID: 1423071129}
   - component: {fileID: 1423071128}
-  - component: {fileID: 1423071133}
   - component: {fileID: 1423071132}
+  - component: {fileID: 1423071133}
   m_Layer: 0
   m_Name: Switch
   m_TagString: Untagged
@@ -13049,9 +13052,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1423071127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f80dbdb63dd26c6408975e24b51931f9, type: 3}
+  m_Script: {fileID: 11500000, guid: cde4fb67030fc413e892c46a843055a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 0
+  tagType: Player
   downValue: 0.08
 --- !u!4 &1470994881 stripped
 Transform:
@@ -13069,7 +13074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1509520841}
   m_Layer: 0
-  m_Name: RightLamp
+  m_Name: OrangeLamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13090,6 +13095,7 @@ Transform:
   - {fileID: 966878060}
   - {fileID: 955941098}
   - {fileID: 1521396253}
+  - {fileID: 1690529024}
   m_Father: {fileID: 1714917914}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13578,11 +13584,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690529023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.59, y: 0.844, z: -10.510732}
+  m_LocalPosition: {x: 3.7299995, y: 0.84399986, z: -10.510732}
   m_LocalScale: {x: 0.9566345, y: 1.0882589, z: 1}
   m_Children: []
-  m_Father: {fileID: 581416876}
-  m_RootOrder: 5
+  m_Father: {fileID: 1509520841}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1690529025
 BoxCollider:
@@ -13653,9 +13659,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1690529023}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce1ae0ad09fd74a4b80706cfbdd3ca93, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c70385767bf2734ea66d87523bf90c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  switchController: {fileID: 239848990}
 --- !u!1 &1714917913
 GameObject:
   m_ObjectHideFlags: 0
@@ -14514,7 +14521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2100948173}
   m_Layer: 0
-  m_Name: RightSwitch
+  m_Name: OrangeSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

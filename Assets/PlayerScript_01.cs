@@ -14,14 +14,26 @@ public class PlayerScript_01 : MonoBehaviourPun
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        if (PhotonNetwork.IsConnected)
+        {
+            if (photonView.IsMine == false)
+            {
+                rb.isKinematic = true;
+                GetComponentInChildren<SphereCollider>().isTrigger = true;
+            }
+
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (photonView.IsMine == false)
+        if (PhotonNetwork.IsConnected)
         {
-            return;
+            if (photonView.IsMine == false)
+            {
+                return;
+            }
         }
 
         if (Input.GetKey(KeyCode.D))

@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 {
+    [SerializeField] bool isBlue;
     [SerializeField] GameObject[] playerPrefabs;
     [SerializeField] Transform[] playerPositions;
     // [SerializeField] GameObject lobbyButton;
@@ -20,7 +21,15 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 
         if (PhotonNetwork.IsConnected == false)
         {
-            GameObject localGamePlayer = Instantiate(playerPrefabs[1], playerPositions[0].position, Quaternion.identity);
+            if (isBlue)
+            {
+                GameObject localGamePlayer = Instantiate(playerPrefabs[0], playerPositions[0].position, Quaternion.identity);
+            }
+            else
+            {
+                GameObject localGamePlayer = Instantiate(playerPrefabs[1], playerPositions[1].position, Quaternion.identity);
+            }
+
             return;
         }
         PhotonNetwork.CurrentRoom.IsOpen = false;
