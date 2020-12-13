@@ -5,24 +5,21 @@ using UnityEngine;
 public class ButtonOrange : MonoBehaviour
 {
     public static bool orangeiio;
-    // Start is called before the first frame update
+    Vector3 defaultPosition; // 元々の位置：スイッチから離れた時に戻すため
+    float downValue = 0.14f;
+
     void Start()
     {
-
+        defaultPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     void OnTriggerStay(Collider collider)
     {
         if (collider.gameObject.tag == "PlayerOrange")
         {
             Debug.Log("iio");
-            transform.position = new Vector3(52.9f, 4.19f, -1.77f);
+            transform.position = defaultPosition - new Vector3(0, downValue, 0);
             orangeiio = true;
         }
 
@@ -31,7 +28,7 @@ public class ButtonOrange : MonoBehaviour
     {
         if (collider.gameObject.tag == "PlayerOrange")
         {
-            transform.position = new Vector3(52.9f, 4.3f, -1.77f);
+            transform.position = defaultPosition;
             orangeiio = false;
         }
     }

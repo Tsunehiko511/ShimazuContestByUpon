@@ -5,24 +5,21 @@ using UnityEngine;
 public class ButtonConAO : MonoBehaviour
 {
     public static bool iio;
-    // Start is called before the first frame update
+    Vector3 defaultPosition; // 元々の位置：スイッチから離れた時に戻すため
+    [SerializeField] float downValue = default;// 0.14f; インスペクターで調節する必要あり
+
     void Start()
     {
-      
+        defaultPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnTriggerStay(Collider collider)
     {
         if(collider.gameObject.tag == "Player")
         {
             Debug.Log("iio");
-            transform.position = new Vector3(37.51469f, 1.9f, -1.77f);
+            transform.position = defaultPosition - new Vector3(0, downValue, 0);
             iio = true;
         }
       
@@ -31,7 +28,7 @@ public class ButtonConAO : MonoBehaviour
     {
         if(collider.gameObject.tag == "Player")
         {
-            transform.position = new Vector3(37.51469f, 2f, -1.77f);
+            transform.position = defaultPosition;
             iio = false;
         }
     }
