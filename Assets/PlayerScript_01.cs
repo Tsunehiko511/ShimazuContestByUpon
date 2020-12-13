@@ -1,8 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
+using System.Collections;
+using System;
+using Photon.Pun;
 
-public class PlayerScript_01 : MonoBehaviour
+public class PlayerScript_01 : MonoBehaviourPun
 {
     private Rigidbody rb;
     public float jumpSpeed;
@@ -12,11 +14,28 @@ public class PlayerScript_01 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        if (PhotonNetwork.IsConnected)
+        {
+            if (photonView.IsMine == false)
+            {
+                rb.isKinematic = true;
+                GetComponentInChildren<SphereCollider>().isTrigger = true;
+            }
+
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (PhotonNetwork.IsConnected)
+        {
+            if (photonView.IsMine == false)
+            {
+                return;
+            }
+        }
+
         if (Input.GetKey(KeyCode.D))
         {
             transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
