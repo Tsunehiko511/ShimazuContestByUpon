@@ -10984,7 +10984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa798da741ec047dc9b7ba4ed96f3610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBlue: 0
+  isBlue: 1
   playerPrefabs:
   - {fileID: 2532639584381498365, guid: b3a885d8ce2020f4ba5a9e002ab816e3, type: 3}
   - {fileID: 9108829905998716331, guid: 7546928d9ee802049aed0f6c3c400ab5, type: 3}
@@ -11965,7 +11965,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: de097029aca2bd74ca8413b874c25e05, type: 2}
+  - {fileID: 2100000, guid: 2edb829ee1c52e5458b511216ee7f8dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13314,7 +13314,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: de097029aca2bd74ca8413b874c25e05, type: 2}
+  - {fileID: 2100000, guid: 2edb829ee1c52e5458b511216ee7f8dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
