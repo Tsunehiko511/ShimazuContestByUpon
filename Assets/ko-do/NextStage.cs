@@ -2,9 +2,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 public class NextStage : MonoBehaviour
 {
+    [SerializeField] string nextStageName = default;
     [SerializeField] StageManager stageManager = default;
     [SerializeField] GameObject NextImage = default;
     [SerializeField] Text SHIRENTEXT = default;
@@ -28,6 +30,7 @@ public class NextStage : MonoBehaviour
         yield return new WaitForSeconds(2);
         SHIRENTEXT.text = "イコウカンリョウ";
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("Stage02");
+        PhotonNetwork.IsMessageQueueRunning = false;
+        SceneManager.LoadScene(nextStageName);
     }
 }

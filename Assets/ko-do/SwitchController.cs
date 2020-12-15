@@ -18,6 +18,20 @@ public class SwitchController : MonoBehaviour
         defaultPosition = transform.position;
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            if (Input.GetKey(KeyCode.B) && tagType == "Player")
+            {
+                isOn = true;
+            }
+            if (Input.GetKey(KeyCode.O) && tagType == "PlayerOrange")
+            {
+                isOn = true;
+            }
+        }
+    }
 
     void OnTriggerStay(Collider collider)
     {
