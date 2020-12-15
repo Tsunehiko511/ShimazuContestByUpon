@@ -929,7 +929,7 @@ GameObject:
   - component: {fileID: 293681435}
   - component: {fileID: 293681434}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: TimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5903,7 +5903,7 @@ GameObject:
   - component: {fileID: 326268457}
   - component: {fileID: 326268456}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6302,6 +6302,7 @@ MonoBehaviour:
   tobira: {fileID: 223974226}
   blueSwitch: {fileID: 1423071133}
   orangeSwitch: {fileID: 239848990}
+  isClear: 0
 --- !u!4 &595433628
 Transform:
   m_ObjectHideFlags: 0
@@ -6784,7 +6785,7 @@ GameObject:
   - component: {fileID: 823165920}
   - component: {fileID: 823165919}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7647,7 +7648,7 @@ GameObject:
   - component: {fileID: 1114053793}
   - component: {fileID: 1114053792}
   m_Layer: 5
-  m_Name: Text (3)
+  m_Name: OrangeButtonMessageText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7956,7 +7957,7 @@ GameObject:
   - component: {fileID: 1470777323}
   - component: {fileID: 1470777322}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8206,7 +8207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1543580855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8466,8 +8467,9 @@ GameObject:
   - component: {fileID: 1643413301}
   - component: {fileID: 1643413300}
   - component: {fileID: 1643413302}
+  - component: {fileID: 1643413303}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: NextStage
   m_TagString: NextStage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8516,6 +8518,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1643413303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643413299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5b9d36c360d4d7988dc5a203f27504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageManager: {fileID: 595433627}
+  NextImage: {fileID: 1543580854}
+  SHIRENTEXT: {fileID: 1008386782}
 --- !u!1 &1678570535
 GameObject:
   m_ObjectHideFlags: 0
@@ -9210,7 +9227,7 @@ GameObject:
   - component: {fileID: 1867345856}
   - component: {fileID: 1867345855}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: BlueButtonMessageText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
