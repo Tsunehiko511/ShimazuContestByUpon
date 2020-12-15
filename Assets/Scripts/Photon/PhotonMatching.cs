@@ -10,11 +10,11 @@ public class PhotonMatching : MonoBehaviourPunCallbacks
     public static int id; // 先に入ったかどうかを判断
     public static bool isOnline; // 先に入ったかどうかを判断
     [SerializeField] GameObject matchingButton;
-    [SerializeField] GameObject text;
+    [SerializeField] Text messageText;
     private void Start()
     {
         matchingButton.SetActive(false);
-        text.SetActive(false);
+        messageText.transform.parent.gameObject.SetActive(false);
         // Photonに接続
         Connect();
     }
@@ -38,7 +38,7 @@ public class PhotonMatching : MonoBehaviourPunCallbacks
     // マッチングボタンを押すと発動
     public void OnMatchingButton()
     {
-        text.SetActive(true);
+        messageText.transform.parent.gameObject.SetActive(true);
         matchingButton.SetActive(false);
         PhotonNetwork.JoinRandomRoom();
     }
@@ -110,7 +110,13 @@ public class PhotonMatching : MonoBehaviourPunCallbacks
         if (currentRoomCount == max)
         {
             PhotonNetwork.IsMessageQueueRunning = false;
-            SceneManager.LoadScene("Stage01");
+            messageText.text = "カップルセイリツ";
+            Invoke("NextStage", 3f);
         }
+    }
+
+    void NextStage()
+    {
+        SceneManager.LoadScene("Stage01");
     }
 }
