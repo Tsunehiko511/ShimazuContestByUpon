@@ -10,6 +10,8 @@ public class StageManager : MonoBehaviour
     // bool kiiro;
     public SwitchController blueSwitch;
     public SwitchController orangeSwitch;
+    float time;
+    bool kaiten;
     // Update is called once per frame
     void Update()
     {
@@ -19,7 +21,9 @@ public class StageManager : MonoBehaviour
         // if (ao == true && kiiro == true)
         if (blueSwitch.isOn == true && orangeSwitch.isOn == true)
         {
-            tobira.transform.rotation = new Quaternion(0, -111.08f,0, 0);
+            tobira.transform.eulerAngles = new Vector3(0, -144.26f, 0);
         }
+
+
     }
 }

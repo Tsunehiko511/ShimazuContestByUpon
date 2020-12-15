@@ -928,7 +928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BaseMeshObj: {fileID: 2561416080712106044}
-  BakeMeshObj: {fileID: 6297066314755959849, guid: 079e869e1dceabf41a4b2628b902b8a9,
+  BakeMeshObj: {fileID: 8315828155360503912, guid: 7f7ca23ba1f4b4047b5296303a6c4515,
     type: 3}
 --- !u!1 &9108829905998716331
 GameObject:
