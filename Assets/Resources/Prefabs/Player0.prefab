@@ -49,8 +49,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpSpeed: 7
   speed: 2
-  NextImage: {fileID: 0}
-  SHIRENTEXT: {fileID: 0}
 --- !u!54 &2532639584381498364
 Rigidbody:
   m_ObjectHideFlags: 0

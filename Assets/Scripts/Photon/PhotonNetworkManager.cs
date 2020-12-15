@@ -17,7 +17,6 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        PhotonNetwork.IsMessageQueueRunning = true;
 
         if (PhotonNetwork.IsConnected == false)
         {
@@ -29,12 +28,16 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
             {
                 GameObject localGamePlayer = Instantiate(playerPrefabs[1], playerPositions[1].position, Quaternion.identity);
             }
-
             return;
         }
+        Invoke("Spawn", 0.75f);
         PhotonNetwork.CurrentRoom.IsOpen = false;
-        Debug.Log(PhotonNetwork.CurrentRoom.PlayerCount);
         GameObject gamePlayer = PhotonNetwork.Instantiate("Prefabs/Player" + PhotonMatching.id, playerPositions[PhotonMatching.id].position, Quaternion.identity);
+    }
+
+    void Spawn()
+    {
+        PhotonNetwork.IsMessageQueueRunning = true;
     }
 
     // 将来使うかも
