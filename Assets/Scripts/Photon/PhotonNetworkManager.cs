@@ -23,10 +23,13 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
             if (isBlue)
             {
                 GameObject localGamePlayer = Instantiate(playerPrefabs[0], playerPositions[0].position, Quaternion.identity);
+                Instantiate(playerPrefabs[1], playerPositions[1].position, Quaternion.identity);
+
             }
             else
             {
                 GameObject localGamePlayer = Instantiate(playerPrefabs[1], playerPositions[1].position, Quaternion.identity);
+                Instantiate(playerPrefabs[0], playerPositions[0].position, Quaternion.identity);
             }
             return;
         }

@@ -26,13 +26,13 @@ public class SwitchController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.B) && tagType == "Player")
             {
-                audio.PlayOneShot(sound);
                 isOn = true;
+                audio.PlayOneShot(sound);
             }
             if (Input.GetKey(KeyCode.O) && tagType == "PlayerOrange")
             {
-                audio.PlayOneShot(sound);
                 isOn = true;
+                audio.PlayOneShot(sound);
             }
         }
     }

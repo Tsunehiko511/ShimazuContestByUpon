@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using Photon.Pun;
 public class PlayerScript_01 : MonoBehaviourPun
 {
@@ -6,7 +7,10 @@ public class PlayerScript_01 : MonoBehaviourPun
     public float jumpSpeed;
     private bool isJumping = false;
     public float speed;
-    // Start is called before the first frame update
+
+    // 同期位置：これと離れすぎると瞬間移動するようにする
+    Vector3 recievePosition;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -14,10 +18,14 @@ public class PlayerScript_01 : MonoBehaviourPun
         {
             if (photonView.IsMine == false)
             {
-                rb.isKinematic = true;
-                GetComponentInChildren<SphereCollider>().isTrigger = true;
+                // rb.isKinematic = true;
+                // GetComponentInChildren<SphereCollider>().isTrigger = true;
+                recievePosition = transform.position;
             }
-
+            else
+            {
+                StartCoroutine(SendPosition());
+            }
         }
     }
 
@@ -28,7 +36,14 @@ public class PlayerScript_01 : MonoBehaviourPun
         {
             if (photonView.IsMine == false)
             {
+                //もし離れすぎていたら、同期する
+                if (Vector2.Distance(recievePosition, transform.position) > 1f)
+                {
+                    Debug.Log("もし離れすぎていたら、同期する");
+                    transform.position = recievePosition;
+                }
                 //大好きよ💛
+                recievePosition = transform.position;
                 return;
             }
         }
@@ -55,6 +70,21 @@ public class PlayerScript_01 : MonoBehaviourPun
         {
             this.transform.localScale = new Vector3(0.5f ,0.5f, 0.5f);
         }
+    }
+
+    IEnumerator SendPosition()
+    {
+        while (true)
+        {
+            photonView.RPC(nameof(SetPosition), RpcTarget.Others, transform.position);
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
+    [PunRPC]
+    public void SetPosition(Vector3 position)
+    {
+        recievePosition = position;
     }
 
     private void OnCollisionEnter(Collision collision)

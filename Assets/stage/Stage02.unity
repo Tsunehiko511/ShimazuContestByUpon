@@ -133,9 +133,10 @@ GameObject:
   - component: {fileID: 19495976}
   - component: {fileID: 19495975}
   - component: {fileID: 19495974}
-  - component: {fileID: 19495979}
   - component: {fileID: 19495978}
   - component: {fileID: 19495980}
+  - component: {fileID: 19495981}
+  - component: {fileID: 19495979}
   m_Layer: 0
   m_Name: Cube (34)
   m_TagString: RedBlock
@@ -242,9 +243,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 19495973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &19495980
@@ -343,6 +345,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &19495981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19495973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 24
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &20488587
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,9 +379,10 @@ GameObject:
   - component: {fileID: 20488590}
   - component: {fileID: 20488589}
   - component: {fileID: 20488588}
-  - component: {fileID: 20488593}
   - component: {fileID: 20488592}
   - component: {fileID: 20488594}
+  - component: {fileID: 20488595}
+  - component: {fileID: 20488593}
   m_Layer: 0
   m_Name: Cube (33)
   m_TagString: RedBlock
@@ -464,9 +489,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 20488587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &20488594
@@ -565,6 +591,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &20488595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20488587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 15
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &29813578
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,9 +625,10 @@ GameObject:
   - component: {fileID: 29813581}
   - component: {fileID: 29813580}
   - component: {fileID: 29813579}
-  - component: {fileID: 29813584}
   - component: {fileID: 29813583}
   - component: {fileID: 29813585}
+  - component: {fileID: 29813586}
+  - component: {fileID: 29813584}
   m_Layer: 0
   m_Name: Cube (28)
   m_TagString: BlueBlock
@@ -686,11 +735,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 29813578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: Player
+  sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
-  sound: {fileID: 8300000, guid: 6237b7cb294fbe543b3fe2214f419b2e, type: 3}
 --- !u!82 &29813585
 AudioSource:
   m_ObjectHideFlags: 0
@@ -787,6 +837,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &29813586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29813578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 10
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &35739638
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,10 +964,10 @@ GameObject:
   - component: {fileID: 75419786}
   - component: {fileID: 75419785}
   - component: {fileID: 75419784}
-  - component: {fileID: 75419790}
-  - component: {fileID: 75419789}
   - component: {fileID: 75419788}
   - component: {fileID: 75419791}
+  - component: {fileID: 75419792}
+  - component: {fileID: 75419789}
   m_Layer: 0
   m_Name: Cube (26)
   m_TagString: BlueBlock
@@ -1002,25 +1074,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 75419783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 0}
-  sound: {fileID: 0}
---- !u!114 &75419790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75419783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cam: {fileID: 0}
+  tagName: Player
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
+  Cam: {fileID: 0}
 --- !u!82 &75419791
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1117,6 +1176,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &75419792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75419783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 18
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &79148905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,7 +1366,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130711926}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1345,7 +1426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130711926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9417133, y: -3.7869883, z: 0.39727736}
+  m_LocalPosition: {x: 3.9417133, y: -3.9, z: 0.39727736}
   m_LocalScale: {x: 1.6221833, y: -0.6366247, z: 10.2}
   m_Children: []
   m_Father: {fileID: 2010205825}
@@ -1364,10 +1445,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 0
-  audio: {fileID: 130711932}
   sound: {fileID: 8300000, guid: 3efd87bfb4a3c2a47b5c4fe413648190, type: 3}
   tagType: Player
-  downValue: 0
+  downValue: 0.25
 --- !u!82 &130711932
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1646,10 +1726,11 @@ GameObject:
   - component: {fileID: 184129044}
   - component: {fileID: 184129043}
   - component: {fileID: 184129042}
-  - component: {fileID: 184129046}
   - component: {fileID: 184129048}
   - component: {fileID: 184129047}
   - component: {fileID: 184129049}
+  - component: {fileID: 184129050}
+  - component: {fileID: 184129046}
   m_Layer: 0
   m_Name: Cube (35)
   m_TagString: RedBlock
@@ -1740,9 +1821,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 184129041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!54 &184129047
@@ -1773,8 +1855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
-  Cam: {fileID: 0}
 --- !u!82 &184129049
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1871,6 +1951,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &184129050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184129041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 23
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &200068193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,9 +1985,10 @@ GameObject:
   - component: {fileID: 200068196}
   - component: {fileID: 200068195}
   - component: {fileID: 200068194}
-  - component: {fileID: 200068199}
   - component: {fileID: 200068198}
   - component: {fileID: 200068200}
+  - component: {fileID: 200068201}
+  - component: {fileID: 200068199}
   m_Layer: 0
   m_Name: Cube (41)
   m_TagString: Untagged
@@ -1992,11 +2095,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 200068193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 0}
+  tagName: Player
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
+  Cam: {fileID: 0}
 --- !u!82 &200068200
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2093,6 +2197,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &200068201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200068193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 7
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &230559059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,9 +2324,10 @@ GameObject:
   - component: {fileID: 285701952}
   - component: {fileID: 285701951}
   - component: {fileID: 285701950}
-  - component: {fileID: 285701955}
   - component: {fileID: 285701954}
   - component: {fileID: 285701956}
+  - component: {fileID: 285701957}
+  - component: {fileID: 285701955}
   m_Layer: 0
   m_Name: Cube (38)
   m_TagString: RedBlock
@@ -2307,9 +2434,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 285701949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &285701956
@@ -2408,6 +2536,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &285701957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285701949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 11
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &319083700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,9 +3010,10 @@ GameObject:
   - component: {fileID: 496159772}
   - component: {fileID: 496159771}
   - component: {fileID: 496159770}
-  - component: {fileID: 496159775}
   - component: {fileID: 496159774}
   - component: {fileID: 496159776}
+  - component: {fileID: 496159777}
+  - component: {fileID: 496159775}
   m_Layer: 0
   m_Name: Cube (30)
   m_TagString: RedBlock
@@ -2969,9 +3120,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 496159769}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &496159776
@@ -3070,6 +3222,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &496159777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496159769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 8
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &517310115
 GameObject:
   m_ObjectHideFlags: 0
@@ -3337,9 +3511,10 @@ GameObject:
   - component: {fileID: 568243443}
   - component: {fileID: 568243442}
   - component: {fileID: 568243441}
-  - component: {fileID: 568243446}
   - component: {fileID: 568243445}
   - component: {fileID: 568243447}
+  - component: {fileID: 568243448}
+  - component: {fileID: 568243446}
   m_Layer: 0
   m_Name: Cube (32)
   m_TagString: RedBlock
@@ -3446,9 +3621,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 568243440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &568243447
@@ -3547,6 +3723,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &568243448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568243440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 12
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &598193994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3507032150055722890, guid: b3a3e7a2e8e504f87b17e84120f96e36,
@@ -4573,9 +4771,10 @@ GameObject:
   - component: {fileID: 1068282204}
   - component: {fileID: 1068282203}
   - component: {fileID: 1068282202}
-  - component: {fileID: 1068282207}
   - component: {fileID: 1068282206}
   - component: {fileID: 1068282208}
+  - component: {fileID: 1068282209}
+  - component: {fileID: 1068282207}
   m_Layer: 0
   m_Name: Cube (29)
   m_TagString: RedBlock
@@ -4682,9 +4881,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1068282201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &1068282208
@@ -4783,6 +4983,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1068282209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068282201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 6
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1128666765
 GameObject:
   m_ObjectHideFlags: 0
@@ -4795,9 +5017,10 @@ GameObject:
   - component: {fileID: 1128666768}
   - component: {fileID: 1128666767}
   - component: {fileID: 1128666766}
-  - component: {fileID: 1128666771}
   - component: {fileID: 1128666770}
   - component: {fileID: 1128666772}
+  - component: {fileID: 1128666773}
+  - component: {fileID: 1128666771}
   m_Layer: 0
   m_Name: Cube (31)
   m_TagString: BlueBlock
@@ -4904,11 +5127,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1128666765}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: Player
+  sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
-  sound: {fileID: 8300000, guid: 6237b7cb294fbe543b3fe2214f419b2e, type: 3}
 --- !u!82 &1128666772
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5005,6 +5229,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1128666773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128666765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 5
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &1136194112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3507032149926066417, guid: b3a3e7a2e8e504f87b17e84120f96e36,
@@ -5156,9 +5402,10 @@ GameObject:
   - component: {fileID: 1160970830}
   - component: {fileID: 1160970829}
   - component: {fileID: 1160970828}
-  - component: {fileID: 1160970833}
   - component: {fileID: 1160970832}
   - component: {fileID: 1160970834}
+  - component: {fileID: 1160970835}
+  - component: {fileID: 1160970833}
   m_Layer: 0
   m_Name: Cube (20)
   m_TagString: BlueBlock
@@ -5265,11 +5512,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1160970827}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 0}
+  tagName: Player
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
+  Cam: {fileID: 0}
 --- !u!82 &1160970834
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5366,6 +5614,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1160970835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160970827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 4
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1189859656
 GameObject:
   m_ObjectHideFlags: 0
@@ -5661,7 +5931,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259573333}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5740,10 +6010,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 0
-  audio: {fileID: 1259573339}
   sound: {fileID: 8300000, guid: 3efd87bfb4a3c2a47b5c4fe413648190, type: 3}
   tagType: PlayerOrange
-  downValue: 0
+  downValue: 0.39
 --- !u!82 &1259573339
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5930,9 +6199,10 @@ GameObject:
   - component: {fileID: 1327823699}
   - component: {fileID: 1327823698}
   - component: {fileID: 1327823697}
-  - component: {fileID: 1327823701}
   - component: {fileID: 1327823700}
   - component: {fileID: 1327823702}
+  - component: {fileID: 1327823703}
+  - component: {fileID: 1327823701}
   m_Layer: 0
   m_Name: Cube (43)
   m_TagString: Untagged
@@ -6039,11 +6309,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1327823695}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 0}
+  tagName: Player
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
+  Cam: {fileID: 0}
 --- !u!82 &1327823702
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6140,6 +6411,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1327823703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327823695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1335250585
 GameObject:
   m_ObjectHideFlags: 0
@@ -6152,6 +6445,8 @@ GameObject:
   - component: {fileID: 1335250588}
   - component: {fileID: 1335250587}
   - component: {fileID: 1335250586}
+  - component: {fileID: 1335250590}
+  - component: {fileID: 1335250591}
   m_Layer: 0
   m_Name: Cube (40)
   m_TagString: Untagged
@@ -6233,6 +6528,43 @@ Transform:
   m_Father: {fileID: 1041154673}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1335250590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335250585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1335250591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335250585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: Player
+  sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
+  Cam: {fileID: 0}
 --- !u!1 &1401204060
 GameObject:
   m_ObjectHideFlags: 0
@@ -6245,9 +6577,10 @@ GameObject:
   - component: {fileID: 1401204063}
   - component: {fileID: 1401204062}
   - component: {fileID: 1401204061}
-  - component: {fileID: 1401204066}
   - component: {fileID: 1401204065}
   - component: {fileID: 1401204067}
+  - component: {fileID: 1401204068}
+  - component: {fileID: 1401204066}
   m_Layer: 0
   m_Name: Cube (23)
   m_TagString: RedBlock
@@ -6354,9 +6687,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1401204060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &1401204067
@@ -6455,6 +6789,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1401204068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401204060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 3
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &1455245287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6570,7 +6926,7 @@ GameObject:
   - component: {fileID: 1457179330}
   m_Layer: 0
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6851,9 +7207,10 @@ GameObject:
   - component: {fileID: 1537351879}
   - component: {fileID: 1537351878}
   - component: {fileID: 1537351877}
-  - component: {fileID: 1537351882}
   - component: {fileID: 1537351881}
   - component: {fileID: 1537351883}
+  - component: {fileID: 1537351884}
+  - component: {fileID: 1537351882}
   m_Layer: 0
   m_Name: Cube (24)
   m_TagString: BlueBlock
@@ -6960,11 +7317,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1537351876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 0}
+  tagName: Player
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
+  Cam: {fileID: 0}
 --- !u!82 &1537351883
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7061,6 +7419,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1537351884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537351876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 14
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1621414264
 GameObject:
   m_ObjectHideFlags: 0
@@ -7179,9 +7559,10 @@ GameObject:
   - component: {fileID: 1627674591}
   - component: {fileID: 1627674590}
   - component: {fileID: 1627674589}
-  - component: {fileID: 1627674594}
   - component: {fileID: 1627674593}
   - component: {fileID: 1627674595}
+  - component: {fileID: 1627674596}
+  - component: {fileID: 1627674594}
   m_Layer: 0
   m_Name: Cube (22)
   m_TagString: BlueBlock
@@ -7288,11 +7669,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1627674588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 0}
+  tagName: Player
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
+  Cam: {fileID: 0}
 --- !u!82 &1627674595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7389,6 +7771,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1627674596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627674588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 13
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1646189445
 GameObject:
   m_ObjectHideFlags: 0
@@ -7696,9 +8100,10 @@ GameObject:
   - component: {fileID: 1665214128}
   - component: {fileID: 1665214127}
   - component: {fileID: 1665214126}
-  - component: {fileID: 1665214131}
   - component: {fileID: 1665214130}
   - component: {fileID: 1665214132}
+  - component: {fileID: 1665214133}
+  - component: {fileID: 1665214131}
   m_Layer: 0
   m_Name: Cube (25)
   m_TagString: RedBlock
@@ -7805,9 +8210,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1665214125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &1665214132
@@ -7906,6 +8312,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1665214133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665214125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 22
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1745657532
 GameObject:
   m_ObjectHideFlags: 0
@@ -7918,9 +8346,10 @@ GameObject:
   - component: {fileID: 1745657535}
   - component: {fileID: 1745657534}
   - component: {fileID: 1745657533}
-  - component: {fileID: 1745657538}
   - component: {fileID: 1745657537}
   - component: {fileID: 1745657539}
+  - component: {fileID: 1745657540}
+  - component: {fileID: 1745657538}
   m_Layer: 0
   m_Name: Cube (36)
   m_TagString: RedBlock
@@ -8027,9 +8456,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1745657532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &1745657539
@@ -8128,6 +8558,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1745657540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745657532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 21
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1759533702
 GameObject:
   m_ObjectHideFlags: 0
@@ -8339,9 +8791,10 @@ GameObject:
   - component: {fileID: 1798699197}
   - component: {fileID: 1798699196}
   - component: {fileID: 1798699195}
-  - component: {fileID: 1798699200}
   - component: {fileID: 1798699199}
   - component: {fileID: 1798699201}
+  - component: {fileID: 1798699202}
+  - component: {fileID: 1798699200}
   m_Layer: 0
   m_Name: Cube (42)
   m_TagString: Untagged
@@ -8448,11 +8901,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1798699194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189f19a743585b45871b6a67b813b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 0}
+  tagName: Player
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
+  Cam: {fileID: 0}
 --- !u!82 &1798699201
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8549,6 +9003,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1798699202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798699194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 20
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1851347233
 GameObject:
   m_ObjectHideFlags: 0
@@ -8561,9 +9037,10 @@ GameObject:
   - component: {fileID: 1851347236}
   - component: {fileID: 1851347235}
   - component: {fileID: 1851347234}
-  - component: {fileID: 1851347239}
   - component: {fileID: 1851347238}
   - component: {fileID: 1851347240}
+  - component: {fileID: 1851347241}
+  - component: {fileID: 1851347239}
   m_Layer: 0
   m_Name: Cube (37)
   m_TagString: RedBlock
@@ -8670,9 +9147,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1851347233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &1851347240
@@ -8771,6 +9249,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1851347241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851347233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 19
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1921780140
 GameObject:
   m_ObjectHideFlags: 0
@@ -8989,9 +9489,10 @@ GameObject:
   - component: {fileID: 1939760725}
   - component: {fileID: 1939760724}
   - component: {fileID: 1939760723}
-  - component: {fileID: 1939760728}
   - component: {fileID: 1939760727}
   - component: {fileID: 1939760729}
+  - component: {fileID: 1939760730}
+  - component: {fileID: 1939760728}
   m_Layer: 0
   m_Name: Cube (39)
   m_TagString: RedBlock
@@ -9098,9 +9599,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1939760722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &1939760729
@@ -9199,6 +9701,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1939760730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939760722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 9
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1963416893
 GameObject:
   m_ObjectHideFlags: 0
@@ -9355,9 +9879,11 @@ GameObject:
   - component: {fileID: 1980514870}
   - component: {fileID: 1980514869}
   - component: {fileID: 1980514868}
+  - component: {fileID: 1980514873}
+  - component: {fileID: 1980514872}
   m_Layer: 0
   m_Name: GreenSwitch
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9370,7 +9896,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980514867}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -9430,12 +9956,123 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980514867}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.7817135, y: -7.5609884, z: 0.39727736}
+  m_LocalPosition: {x: 8.7817135, y: -7.69, z: 0.39727736}
   m_LocalScale: {x: 1.6221833, y: -0.6366247, z: 10.2}
   m_Children: []
   m_Father: {fileID: 2010205825}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1980514872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980514867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9bbc61c5cab743dfa0a0b5e1923239a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players: []
+  sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
+  downValue: 0.21
+--- !u!82 &1980514873
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980514867}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.749
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1993557982
 GameObject:
   m_ObjectHideFlags: 0
@@ -9879,9 +10516,10 @@ GameObject:
   - component: {fileID: 2054096658}
   - component: {fileID: 2054096657}
   - component: {fileID: 2054096656}
-  - component: {fileID: 2054096661}
   - component: {fileID: 2054096660}
   - component: {fileID: 2054096662}
+  - component: {fileID: 2054096663}
+  - component: {fileID: 2054096661}
   m_Layer: 0
   m_Name: Cube (21)
   m_TagString: RedBlock
@@ -9988,9 +10626,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2054096655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &2054096662
@@ -10089,6 +10728,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2054096663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054096655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 17
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &2074823665
 GameObject:
   m_ObjectHideFlags: 0
@@ -10101,9 +10762,10 @@ GameObject:
   - component: {fileID: 2074823668}
   - component: {fileID: 2074823667}
   - component: {fileID: 2074823666}
-  - component: {fileID: 2074823671}
   - component: {fileID: 2074823670}
   - component: {fileID: 2074823672}
+  - component: {fileID: 2074823673}
+  - component: {fileID: 2074823671}
   m_Layer: 0
   m_Name: Cube (27)
   m_TagString: RedBlock
@@ -10210,9 +10872,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2074823665}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51d25851c8d8b746a8c177e15e21182, type: 3}
+  m_Script: {fileID: 11500000, guid: 01b8375acd4c946a4bc0457400978ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: PlayerOrange
   sound: {fileID: 8300000, guid: 85bcfcb582b04a448a1453302c5f0545, type: 3}
   Cam: {fileID: 0}
 --- !u!82 &2074823672
@@ -10311,6 +10974,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2074823673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074823665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 16
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &2106835280
 GameObject:
   m_ObjectHideFlags: 0
@@ -10325,7 +11010,7 @@ GameObject:
   - component: {fileID: 2106835281}
   m_Layer: 0
   m_Name: Cube (17)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
