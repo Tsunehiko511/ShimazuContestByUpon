@@ -6,7 +6,8 @@ public class SwitchController : MonoBehaviour
 {
     // 押されているかどうか
     public bool isOn;
-
+     AudioSource audio;
+    public AudioClip sound;
     // インスペクターから、個別にタグの名前を設定することで、１つのスクリプトでも青とオレンジを分けることができる
     [SerializeField] string tagType;// PlayerかPlayerOrangeが入る
 
@@ -15,6 +16,7 @@ public class SwitchController : MonoBehaviour
 
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         defaultPosition = transform.position;
     }
 
@@ -24,10 +26,12 @@ public class SwitchController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.B) && tagType == "Player")
             {
+                audio.PlayOneShot(sound);
                 isOn = true;
             }
             if (Input.GetKey(KeyCode.O) && tagType == "PlayerOrange")
             {
+                audio.PlayOneShot(sound);
                 isOn = true;
             }
         }
@@ -37,6 +41,7 @@ public class SwitchController : MonoBehaviour
     {
         if (collider.gameObject.tag == tagType)
         {
+           
             // ボタンの位置を下げる
             transform.position = defaultPosition - new Vector3(0, downValue, 0);
             isOn = true;
@@ -52,5 +57,12 @@ public class SwitchController : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider collider)
+    {
+        if(collider.gameObject.tag == tagType)
+        {
+            audio.PlayOneShot(sound);
+        }
+    }
 
 }
