@@ -3998,7 +3998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27cd203e40cc1b0499bc78cd071988fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameTime: 60
+  GameTime: 120
   text: {fileID: 833584512}
 --- !u!4 &760166355
 Transform:
@@ -7068,7 +7068,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.2886314, y: 1.8222847, z: 5.8884115}
-  m_Center: {x: -1.1641493, y: -0.7575016, z: 0.23836946}
+  m_Center: {x: -1.1641493, y: -0.7575016, z: 1.81}
 --- !u!4 &1504211982
 Transform:
   m_ObjectHideFlags: 0

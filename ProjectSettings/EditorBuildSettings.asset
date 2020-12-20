@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/stage/OWARI.unity
     guid: f2bdd33b18b44bb4ba89cc6874cf9c79
+  - enabled: 1
+    path: Assets/stage/KURIA.unity
+    guid: 11df3c77f90a3824d83e738b4033f1b5
   - enabled: 0
     path: 
     guid: a4e8a5d9e73884f70ad543d912b655ce
