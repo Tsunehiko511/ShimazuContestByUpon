@@ -17,8 +17,6 @@ public class kiirobutton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(iio + "iio");
-        Debug.Log(modosu + "modosu");
     }
 
     void OnTriggerStay(Collider collider)

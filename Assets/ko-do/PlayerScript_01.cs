@@ -27,6 +27,9 @@ public class PlayerScript_01 : MonoBehaviourPun
                 StartCoroutine(SendPosition());
             }
         }
+        rb.constraints = RigidbodyConstraints.FreezePositionZ;
+        rb.freezeRotation = true;
+
     }
 
     // Update is called once per frame
