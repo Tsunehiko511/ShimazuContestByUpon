@@ -1,10 +1,10 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-
-public class BreakableBlock : MonoBehaviourPun
+public class sanBlack : MonoBehaviourPun
 {
-    [SerializeField]  string tagName;
+    [SerializeField] static string tagName;
     AudioSource audio;
     public AudioClip sound;
     public GameObject Cam;

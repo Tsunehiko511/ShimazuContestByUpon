@@ -10,6 +10,9 @@ TagManager:
   - NextStage
   - BlueBlock
   - RedBlock
+  - Shell
+  - turisage
+  - toge
   layers:
   - Default
   - TransparentFX

@@ -23,7 +23,7 @@ public class kiirobutton : MonoBehaviour
 
     void OnTriggerStay(Collider collider)
     {
-        if(collider.gameObject.tag == "Player")
+        if(collider.gameObject.tag == "Player" || collider.gameObject.tag == "PlayerOrange")
         {
 
             transform.localScale = new Vector3(1, 0.5f, 1);
@@ -39,7 +39,7 @@ public class kiirobutton : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if(collider.gameObject.tag == "Player")
+        if(collider.gameObject.tag == "Player" || collider.gameObject.tag == "PlayerOrange")
         {
             iio = true;
             audio.PlayOneShot(sound);
@@ -49,7 +49,7 @@ public class kiirobutton : MonoBehaviour
 
     void OnTriggerExit(Collider collider)
     {
-        if(collider.gameObject.tag == "Player")
+        if(collider.gameObject.tag == "Player" || collider.gameObject.tag == "PlayerOrange")
         {
             modosu = true;
         }
