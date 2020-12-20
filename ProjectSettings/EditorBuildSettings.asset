@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/stage/OP.unity
+    guid: 0d48701ee31d310459893c065dfd1d36
+  - enabled: 1
     path: Assets/stage/SAISYO.unity
     guid: b80bfa299f2e6554cab8aedeb54b75bf
   - enabled: 1
@@ -27,12 +30,12 @@ EditorBuildSettings:
     path: Assets/stage/OWARI.unity
     guid: f2bdd33b18b44bb4ba89cc6874cf9c79
   - enabled: 0
-    path: Assets/Scenes/Battle.unity
+    path: 
     guid: a4e8a5d9e73884f70ad543d912b655ce
   - enabled: 0
-    path: Assets/Scenes/Launcher.unity
+    path: 
     guid: 1109871c8083f4d448c385b19b83515a
   - enabled: 0
-    path: Assets/Scenes/Lobby.unity
+    path: 
     guid: a31fd4337a2bc409a9601f8522519c0e
   m_configObjects: {}
