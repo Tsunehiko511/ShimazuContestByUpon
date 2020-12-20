@@ -10,6 +10,7 @@ public class NextStage : MonoBehaviour
     [SerializeField] StageManager stageManager = default;
     [SerializeField] GameObject NextImage = default;
     [SerializeField] Text SHIRENTEXT = default;
+    [SerializeField] string message = default;
 
     private void OnTriggerEnter(Collider collider)
     {
@@ -19,7 +20,7 @@ public class NextStage : MonoBehaviour
             if (player == null)
             {
                 NextImage.SetActive(true);
-                SHIRENTEXT.text = "ツギノシレンニイコウチュウ...";
+                SHIRENTEXT.text = message;
                 StartCoroutine(NextStop());
             }
         }

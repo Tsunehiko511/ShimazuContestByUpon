@@ -21,8 +21,6 @@ public class KIIROKOUSENMANAGER : MonoBehaviour
     {
         modore = kiirobutton.modosu;
         iesu = kiirobutton.iio;
-        Debug.Log(iesu);
-        Debug.Log(modore + "modore");
         if(iesu == true)
         {
             kiirobutton.iio = false;
